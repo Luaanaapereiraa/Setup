@@ -1,7 +1,12 @@
-export function Habit() {
+
+interface HabitProps {
+    completed: number
+}
+
+export function Habit(props: HabitProps) {
     return(
-        <div>
-            <h1> Teste </h1>
+        <div className="bg-zinc-500 w-10 h-10 text-white rounded m-2 text-center items-center justify-center">
+            {props.completed}
         </div>
     )
 }

@@ -1,10 +1,14 @@
-import './App.css'
+import './Styles/global.css';
 import { Habit } from './components/Habit'
 
 function App() {
 
   return (
-      <Habit/>
+    <div>
+      <Habit completed={3} />
+      <Habit completed={10}/>
+      <Habit completed={20}/>
+    </div>
   )
 }
 
